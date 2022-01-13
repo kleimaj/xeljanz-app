@@ -14,44 +14,12 @@
 	<script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js" integrity="" crossorigin="anonymous"></script>
 </head>
 <body ng-app="Xeljanz-App">
-    <section id="landing-page">
-        <header><h4>PRESCRIBING INFORMATION</h4></header>
-        <main>
-            <img src="assets/pfizer-logo.svg" alt="Pfizer Logo" id="logo" />
-            <h1>Tofacitinib pcJIA</h1>
-            <div class="page-buttons">
-                <a href="" class="page-button moa">
-                    <i class="fas fa-atom fa-4x"></i>
-                    <h2>MOA</h2>
-                    <i class="fas fa-chevron-right fa-2x"></i>
-                </a>
-                <a href="" class="page-button ct">
-                    <i class="fas fa-users fa-4x"></i>
-                    <h2>Clinical Trials</h2>
-                    <i class="fas fa-chevron-right fa-2x"></i>
-                </a>
-                <a href="" class="page-button efficacy">
-                    <i class="fas fa-chart-line fa-4x"></i>
-                    <h2>Efficacy</h2>
-                    <i class="fas fa-chevron-right fa-2x"></i>
-                </a>
-                <a href="" class="page-button safety">
-                    <i class="fas fa-exclamation-triangle fa-4x"></i>
-                    <h2>Safety</h2>
-                    <i class="fas fa-chevron-right fa-2x"></i>
-                </a>
-                <a href="" class="page-button dosing">
-                    <i class="fas fa-prescription fa-4x"></i>
-                    <h2>Dosing</h2>
-                    <i class="fas fa-chevron-right fa-2x"></i>
-                </a>
-            </div>
-        </main>
+    <header><h4>PRESCRIBING INFORMATION</h4></header>
+    <ui-view></ui-view>
         <footer>
             <p>Copyright &copy; 2002-2021 Pfizer Inc. All rights reserved. This information—including product information—is intended only for residents of the United States.<br>
             The products discussed herein may have different labeling in different countries.</p>
         </footer>
-    </section>
     </main>
     <!-- Angular UI-Router Config -->
     <script src="js/router-config.js" integrity=""></script>
