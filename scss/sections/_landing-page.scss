@@ -3,14 +3,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
+        #logo {
+            padding: 20px;
+        }
+        h1 {
+            padding: 20px;
+            margin-bottom: 30px;
+        }
     }
-
     .page-buttons {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-self: center;
+        justify-content: center;
+        max-width: 1000px;
     }
 }
