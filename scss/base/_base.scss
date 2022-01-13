@@ -9,6 +9,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    main {
+        width: 70%;
+    }
+    .audio {
+        position: absolute;
+        position: absolute;
+        right: 300px;
+        top: 200px;
+        color: #033258;
+        font-size: 2rem;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+    }
     @include respond(tab-land) {
         flex-direction: column;
     }

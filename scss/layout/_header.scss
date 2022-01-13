@@ -8,7 +8,6 @@ header {
     }
 }
 .top {
-    width: 70%;
     margin: 0 auto;
     @include respond(tab-land) {
         width: 100%;
