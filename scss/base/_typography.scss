@@ -4,6 +4,7 @@
 
 h1,.h1 {
     font-size: 3.4rem;
+    color: $gray-color;
     line-height: 4rem;
 }
 h2,.h2 {
@@ -26,8 +27,10 @@ p,.p {
     font-size: 2.1rem;
 }
 footer {
+    background-color: #B3B3B3;
     p {
         font-size: 1.2rem;
+        color: $footer-text
     }
 }
 .copyright {
