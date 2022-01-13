@@ -2,6 +2,66 @@ nav.desktop {
     @include respond(tab-land) {
         display: none;
     }
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    a {
+        -webkit-box-shadow: 0px 0px 10px -1px #000000; 
+        box-shadow: 0px 0px 10px -1px #000000;
+        width: 85px;
+        margin: 8px 0;
+        padding: 10px 5px;
+        border-radius: 0 34px 34px 0;
+        text-align: center;
+        i {
+            font-size: 4rem;
+        }
+        &.active {
+            i {
+            color: #fff;
+            }
+        }
+        &.moa {
+            color: $moa-color;
+            border: 2px solid $moa-color;
+            border-left: none;
+            &.active {
+                background-color: $moa-color;
+            }
+        }
+        &.ct {
+            color: $ct-color;
+            border: 2px solid $ct-color;
+            border-left: none;
+            &.active {
+                background-color: $ct-color;
+            }
+        }
+        &.efficacy {
+            color: $efficacy-color;
+            border: 2px solid $efficacy-color;
+            border-left: none;
+            &.active {
+                background-color: $efficacy-color;
+            }
+        }
+        &.safety {
+            color: $safety-color;
+            border: 2px solid $safety-color;
+            border-left: none;
+            &.active {
+                background-color: $safety-color;
+            }
+        }
+        &.dosing {
+            color: $dosing-color;
+            border: 2px solid $dosing-color;
+            border-left: none;
+            &.active {
+                background-color: $dosing-color;
+            }
+        }
+    }
 }
 nav.mobile {
     display: none;

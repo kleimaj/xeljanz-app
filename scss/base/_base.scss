@@ -1,9 +1,14 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-  }
+}
 body {
     font-family: 'Roboto Condensed', sans-serif;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a {
     text-decoration: none;
