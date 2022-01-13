@@ -1,6 +1,12 @@
 footer {
     background-color: #B3B3B3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
     p {
+        margin: 20px 30px;
         font-size: 1.2rem;
         color: $footer-text
     }
