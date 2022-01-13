@@ -13,4 +13,8 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/',
             templateUrl: 'landing-page.html',
         })
+        .state('MOA', {
+            url: '/moa',
+            templateUrl: 'content/moa/moa.html'
+        })
 });
