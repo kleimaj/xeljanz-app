@@ -10,7 +10,13 @@
     justify-content: space-between;
     border-radius: 48px;
     @include respond(phone) {
-        min-width: 250px;
+        min-width: 220px;
+        h2 {
+            font-size: 2.8rem;
+        }
+        .fa-4x {
+            font-size: 3em;
+        }
     }
     &.moa {
         color: $moa-color;
