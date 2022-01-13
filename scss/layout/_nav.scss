@@ -66,6 +66,64 @@ nav.desktop {
 nav.mobile {
     display: none;
     @include respond(tab-land) {
-        display: block;
+        display: flex;
+    }
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+    a {
+        width: 20%;
+        margin: 8px 0;
+        padding: 10px 5px;
+        text-align: center;
+        i {
+            font-size: 3rem;
+        }
+        &.active {
+            i {
+            color: #fff;
+            }
+        }
+        &.moa {
+            color: $moa-color;
+            border: 2px solid $moa-color;
+            border-left: none;
+            &.active {
+                color: #fff;
+                background-color: $moa-color;
+            }
+        }
+        &.ct {
+            color: $ct-color;
+            border: 2px solid $ct-color;
+            border-left: none;
+            &.active {
+                background-color: $ct-color;
+            }
+        }
+        &.efficacy {
+            color: $efficacy-color;
+            border: 2px solid $efficacy-color;
+            border-left: none;
+            &.active {
+                background-color: $efficacy-color;
+            }
+        }
+        &.safety {
+            color: $safety-color;
+            border: 2px solid $safety-color;
+            border-left: none;
+            &.active {
+                background-color: $safety-color;
+            }
+        }
+        &.dosing {
+            color: $dosing-color;
+            border: 2px solid $dosing-color;
+            border-left: none;
+            &.active {
+                background-color: $dosing-color;
+            }
+        }
     }
 }

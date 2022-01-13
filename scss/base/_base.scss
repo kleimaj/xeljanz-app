@@ -9,6 +9,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond(tab-land) {
+        flex-direction: column;
+    }
 }
 a {
     text-decoration: none;
