@@ -7,3 +7,31 @@ header {
         padding: 20px 0;
     }
 }
+.top {
+    width: 70%;
+    margin: 0 auto;
+    @include respond(tab-land) {
+        width: 100%;
+        justify-content: space-around;
+    }
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #033258;
+    img {
+        padding: 25px;
+        // corresponds with h1
+        width: 60%;
+    }
+    h1 {
+        font-weight: bold;
+        position: absolute;
+        left: 40%;
+        @include respond(big-desktop) {
+            left: 44%
+        }
+        @include respond(tab-land) {
+            position: relative;
+            left: 0;
+        }
+    }
+}
