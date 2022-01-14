@@ -1,4 +1,8 @@
 let swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -6,4 +10,5 @@ let swiper = new Swiper(".mySwiper", {
           return `<span class="` + className + `"></span>`;
       }
     },
+    mousewheel: true
   });
