@@ -1,11 +1,16 @@
 .mySwiper {
     width: 100%;
-    height: 100%;
     .swiper-slide {
         display: flex;
         align-items: center;
         flex-direction: column;
-
+        @include respond(big-desktop) {
+            height: 700px;
+        }
+        @include respond(tab-land) {
+            height: 380px;
+        }
+        height: 420px;
         .audio {
             position: absolute;
             right: 0;
@@ -13,12 +18,33 @@
             font-size: 2rem;
         }
         img {
-            margin-top: 50px;
+            @include respond(big-desktop) {
+                margin-top: 50px;
+            }
+            @include respond(tab-land) {
+                max-width: 500px;
+                max-height: 400px;
+            }
+            @include respond(tab-port) {
+                max-width: 400px;
+                max-height: 400px;
+            }
+            @include respond(phone) {
+                max-width: 300px;
+            }
+            @include respond(phone-xs) {
+                max-width: 250px;
+                margin-top: 40px;
+            }
+            // width: 400px;
         }
         p {
             align-self: flex-start;
             font-weight: 300;
             font-size: 1.4rem;
+            @include respond(tab-land) {
+                display: none;
+            }
         }
     }
     .swiper-pagination-bullet {
