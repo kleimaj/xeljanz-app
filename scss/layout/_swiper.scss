@@ -47,6 +47,26 @@
             }
         }
     }
+    .swiper-button-next, .swiper-button-prev {
+        @include respond(tab-land) {
+            display: none;
+        }
+        top: 95%;
+        color: #033159;
+        font-family: 'Roboto Condensed';
+        font-size: 2rem;
+
+        &:after {
+            font-size: 2rem;
+            padding: 10px;
+        }
+        &.swiper-button-disabled {
+            visibility: hidden;
+        }
+    }
+    .swiper-button-prev {
+        flex-direction: row-reverse;
+    }
     .swiper-pagination-bullet {
         width: 20px;
         height: 20px;

@@ -10,4 +10,12 @@ footer {
         font-size: 1.2rem;
         color: $footer-text
     }
+    @include respond(tab-land) {
+        display: none;
+    }
+}
+.footer-visible {
+    @include respond(tab-land) {
+        display: flex;
+    }
 }
