@@ -39,3 +39,24 @@
         border: 2px solid $dosing-color;
     }
 }
+.review-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    width: 120px;
+    i {
+        padding: 5px;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+    &.moa {
+        color: #fff;
+        background: $moa-color;
+        border: none;
+        border-radius: 40px;
+        padding: 4px 12px;
+    }
+}

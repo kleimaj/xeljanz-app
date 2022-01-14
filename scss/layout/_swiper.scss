@@ -5,12 +5,12 @@
         align-items: center;
         flex-direction: column;
         @include respond(big-desktop) {
-            height: 700px;
+            height: 670px;
         }
         @include respond(tab-land) {
-            height: 380px;
+            height: 360px;
         }
-        height: 420px;
+        height: 400px;
         .audio {
             position: absolute;
             right: 0;
@@ -64,7 +64,11 @@
             visibility: hidden;
         }
     }
+    .swiper-button-next {
+        right: 20px;
+    }
     .swiper-button-prev {
+        left: 40px;
         flex-direction: row-reverse;
     }
     .swiper-pagination-bullet {

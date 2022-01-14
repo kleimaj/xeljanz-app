@@ -12,3 +12,10 @@ let swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev"
     },
   });
+swiper.on('slideChange', function () {
+    if (swiper.isEnd)
+    document.querySelector('.review-btn').classList.remove('hidden')
+    else {
+        document.querySelector('.review-btn').classList.add('hidden');
+    }
+});
