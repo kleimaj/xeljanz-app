@@ -1,0 +1,64 @@
+.modal {
+    position: fixed;
+    width: 60%;
+    @include respond(tab-land) {
+        width: 90%;
+        left: 5%;
+    }
+    left: 20%;
+    top: 20%;
+    z-index: 2;
+    border: 2px solid #033159;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 10px -1px #000000; 
+    box-shadow: 0px 0px 10px -1px #000000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+        align-self: flex-start;
+        padding: 24px;
+        padding-bottom: 0;
+        color: $gray-color;
+    }
+
+    .close-btn {
+        cursor: pointer;
+        align-self: flex-end;
+        margin: 15px;
+        border: none;
+        background: none;
+        color: #033159;
+        font-size: 2rem;
+    }
+    
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .result {
+        font-size: 2.1rem;
+        padding: 18px;
+
+        color: #4AAF35;
+        &.incorrect {
+            color: #ff0000;
+        }
+    }
+    .submit {
+        color: #fff;
+        background-color: #033159;
+
+        border-radius: 40px;
+        border: none;
+        font-size: 2.1rem;
+        padding: 8px 30px;
+        margin-top: 15px;
+    }
+}
