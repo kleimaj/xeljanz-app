@@ -14,8 +14,8 @@ let swiper = new Swiper(".mySwiper", {
   });
 swiper.on('slideChange', function () {
     if (swiper.isEnd)
-    document.querySelector('.review-btn').classList.remove('hidden')
+    document.querySelector('.review-btn').classList.remove('vis-hidden')
     else {
-        document.querySelector('.review-btn').classList.add('hidden');
+        document.querySelector('.review-btn').classList.add('vis-hidden');
     }
 });
