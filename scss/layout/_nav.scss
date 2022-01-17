@@ -77,9 +77,18 @@ nav.mobile {
         width: 20%;
         // margin: 8px 0;
         padding: 10px 5px;
+        @include respond(phone) {
+            padding: 5px;
+            h5 {
+                font-size: 1.5rem;
+            }
+        }
         text-align: center;
         i {
             font-size: 3rem;
+            @include respond(phone) {
+                font-size: 2rem;
+            }
         }
         &.active {
             i {
