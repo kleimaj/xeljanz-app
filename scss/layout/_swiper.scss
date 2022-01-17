@@ -11,6 +11,9 @@
         @include respond(tab-land) {
             // height: 360px;
         }
+        @include respond(phone) {
+            height: 52vh;
+        }
         // height: 400px;
         height: 57vh;
         .audio {
@@ -33,6 +36,9 @@
             }
             @include respond(phone) {
                 max-width: 100%;
+                &.moa-1 {
+                    margin-top: 0;
+                }
             }
             @include respond(phone-xs) {
                 max-width: 100%;

@@ -12,6 +12,7 @@ footer {
     }
     @include respond(tab-land) {
         display: none;
+        position: relative;
     }
 }
 .footer-visible {
