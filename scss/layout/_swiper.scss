@@ -38,6 +38,7 @@
                 max-width: 100%;
                 &.moa-1 {
                     margin-top: 0;
+                    width: 90%;
                 }
             }
             @include respond(phone-xs) {
