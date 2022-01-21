@@ -17,4 +17,8 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/moa',
             templateUrl: 'content/moa/moa.html'
         })
+        .state('CT', {
+            url: '/clinical-trials',
+            templateUrl: 'content/ct/ct.html'
+        })
 });
