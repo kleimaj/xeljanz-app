@@ -32,6 +32,45 @@ footer {
         color: $footer-text
     }
 }
+ul {
+    li {
+        font-size: 2.1rem;
+        font-weight: 300;
+        // color: $gray-color-2;
+        padding: 5px 0;
+        padding-left: .5em;
+        // &.alt-bullet {
+        //     &::before {
+        //         // color: $secondary-color-3;
+        //     }
+        // }
+        &::before {
+            // https://www.w3schools.com/howto/howto_css_bullet_color.asp
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: $gray-color;/* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            display: inline-block; /* Needed to add space between the bullet and the text */
+            // width: 1em; /* Also needed for space (tweak if needed) */
+            text-indent: -.5em;
+        }
+    }
+    ul {
+        margin-bottom: 0;
+        li {
+            margin-left: 10px;
+            @include respond(tab-port) {
+                padding-left: 0;
+                margin-left: 0;
+            }
+            &::before {
+            content: "–";
+            font-weight: 300;
+            color: $gray-color;
+            // margin-left: 5px;
+            }
+        }
+    }
+}
 .copyright {
     font-size: 1.2rem;
 }
