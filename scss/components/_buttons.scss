@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 48px;
+    background-color: white;
     @include respond(phone) {
         min-width: 220px;
         padding: 8px 20px;
