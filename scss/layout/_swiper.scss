@@ -65,6 +65,9 @@
         color: #033159;
         font-family: 'Roboto Condensed';
         font-size: 2rem;
+        &.ct {
+            color: $ct-color;
+        }
 
         &:after {
             font-size: 2rem;
@@ -89,6 +92,15 @@
         font-size: 12px;
         opacity: 1;
         background: rgba(3, 49, 89, 0.2);
+      }
+      .ct {
+        .swiper-pagination-bullet {
+            background: rgb(65, 174, 242, 0.2);
+        }
+        .swiper-pagination-bullet-active
+        {
+            background: $ct-color;
+        }
       }
 
       .swiper-pagination-bullet-active {
