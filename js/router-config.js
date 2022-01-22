@@ -61,6 +61,22 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                 slideIndex: 4
             }
         })
+        .state ('DOSAGE-REGIMEN', {
+            url: '/clinical-trials/dosage-regimen',
+            templateUrl: 'content/ct/study-design/dosage-regimen.html'
+        })
+        .state ('STATISTICAL-ANALYSIS', {
+            url: '/clinical-trials/statistical-analysis',
+            templateUrl: 'content/ct/study-design/statistical-analysis.html'
+        })
+        .state ('PATIENT-DISPOSITION', {
+            url: '/clinical-trials/patient-disposition',
+            templateUrl: 'content/ct/study-design/patient-disposition.html'
+        })
+        .state ('JIA-CATEGORIES', {
+            url: '/clinical-trials/jia-categories',
+            templateUrl: 'content/ct/study-design/jia-categories.html'
+        })
 });
 
 app.controller("ctCtrl", function ($scope, $state, $stateParams) {
