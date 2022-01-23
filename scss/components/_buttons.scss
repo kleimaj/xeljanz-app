@@ -62,6 +62,22 @@
         box-shadow: 0px 0px 10px -1px #000000;
     }
 }
+.back-btn {
+    right: 75%;
+    position: absolute;
+    font-size: 3rem;
+    color: $ct-color;
+    display: flex;
+    align-items: center;
+    .ct-header {
+        padding-left: 15px;
+    }
+    @include respond(tab-land) {
+        .ct-header {
+            display: none;
+        }
+    }
+}
 .review-btn {
     cursor: pointer;
     display: flex;

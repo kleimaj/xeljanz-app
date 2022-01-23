@@ -59,4 +59,12 @@
             }
         }
     }
+    .content {
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        max-height: 50vh;
+        justify-content: flex-start;
+        max-height: 70vh;
+    }
 }
