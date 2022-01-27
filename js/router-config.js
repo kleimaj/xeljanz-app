@@ -86,6 +86,7 @@ app.controller("ctCtrl", function ($scope, $state, $stateParams) {
 function initSwiper (slideIndex) {
     var swiper = new Swiper('.mySwiper', {
         initialSlide: slideIndex,
+        // autoHeight: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -99,6 +100,8 @@ function initSwiper (slideIndex) {
         },
       });
       swiper.on('slideChange', function () {
+        //   $('#ct.container').scrollTop(0);
+        // document.querySelector('.mySwiper').scrollTop=0
         if (swiper.isEnd)
           document.querySelector('.review-btn').classList.remove('vis-hidden');
         else {
