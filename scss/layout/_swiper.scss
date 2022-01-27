@@ -61,7 +61,10 @@
         @include respond(tab-land) {
             display: none;
         }
-        top: 95%;
+        // top: 95%;
+        top: auto;
+        bottom: 110px !important;
+        position: fixed;
         color: #033159;
         font-family: 'Roboto Condensed';
         font-size: 2rem;
@@ -78,10 +81,12 @@
         }
     }
     .swiper-button-next {
-        right: 20px;
+        // right: 20px;
+        right: 20%;
     }
     .swiper-button-prev {
-        left: 40px;
+        // left: 40px;
+        left: 20%;
         flex-direction: row-reverse;
     }
     .swiper-pagination-bullet {
@@ -105,5 +110,9 @@
 
       .swiper-pagination-bullet-active {
         background: #033159;
+      }
+      .swiper-pagination {
+          position: fixed;
+          bottom: 115px !important;
       }
 }
