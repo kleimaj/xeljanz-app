@@ -36,6 +36,11 @@ hr {
 a {
     text-decoration: none;
 }
+sup {
+    vertical-align: super;
+    font-size: 0.7em;
+    line-height: 1em;
+}
 .hidden {
     display: none !important;
 }

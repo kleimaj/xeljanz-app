@@ -49,11 +49,19 @@
     width: 100%;
     margin: 15px;
 
+    @include respond(tab-port) {
+        margin: 10px 0;
+    }
+
     .slide-btn {
         color: $gray-color;
         margin: 12px;
         font-size: 1.2rem;
-        max-width: 70px;
+        // max-width: 70px;
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         padding: 5px 40px;
         background-color: white;
@@ -61,10 +69,34 @@
         border-radius: 48px;
         -webkit-box-shadow: 0px 0px 10px -1px #000000; 
         box-shadow: 0px 0px 10px -1px #000000;
+        /* one item */
+        &:first-child:nth-last-child(1) {
+        /* -or- &:only-child { */
+            width: 100%;
+        }
+        
+        /* two items */
+        &:first-child:nth-last-child(2),
+        &:first-child:nth-last-child(2) ~ .slide-btn {
+            width: 50%;
+        }
+        
+        /* three items */
+        &:first-child:nth-last-child(3),
+        &:first-child:nth-last-child(3) ~ .slide-btn {
+            width: 33.3333%;
+        }
+        
+        /* four items */
+        &:first-child:nth-last-child(4),
+        &:first-child:nth-last-child(4) ~ .slide-btn {
+            width: 25%;
+        }
         @include respond(tab-port) {
             font-size: 1rem;
             margin: 4px;
-            padding: 5px 10px;
+            padding: 5px;
+            min-height: auto;
         }
     }
 }

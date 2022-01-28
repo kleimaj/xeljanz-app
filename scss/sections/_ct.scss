@@ -5,6 +5,7 @@
         font-weight: 500;
         letter-spacing: .25rem;
         align-self: center;
+        text-align: center;
     }
     .content-container {
         display: flex;
@@ -66,8 +67,14 @@
     .tables {
         display: flex;
         padding: 15px;
+        @include respond(tab-port) {
+            padding: 0;
+        }
         .table {
             margin: 10px;
+            @include respond(tab-port) {
+                margin: 5px;
+            }
             h5 {
                 background: #2EB4FF;
                 font-weight: bold;
