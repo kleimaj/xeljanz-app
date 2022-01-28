@@ -79,6 +79,17 @@ ul {
                 padding-right: .5em;
             }
         }
+        ul.bullet {
+            li {
+                &::before {
+                    content: "o";
+                    font-weight: bold;
+                    color: $ct-color;
+                    text-indent: -1em;
+                    padding-right: .5em;
+                }
+            }
+        }
     }
 }
 .copyright {

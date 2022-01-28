@@ -5,6 +5,11 @@ html {
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
+hr {
+    display: block;
+    border-bottom: 4px solid gray;
+    width: 100%;
+}
 .section {
     display: flex;
     justify-content: center;
