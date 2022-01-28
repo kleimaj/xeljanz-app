@@ -70,6 +70,16 @@ ul {
             }
         }
     }
+    &.check {
+        li {
+            &::before {
+                content: "✓";
+                color: $ct-color;
+                text-indent: -1em;
+                padding-right: .5em;
+            }
+        }
+    }
 }
 .copyright {
     font-size: 1.2rem;
@@ -80,10 +90,4 @@ ul {
 }
 .bold {
     font-weight: 700;
-}
-.ct-header {
-    color: $ct-color;
-    font-family: 'Roboto';
-    font-weight: 500;
-    letter-spacing: .25rem;
 }

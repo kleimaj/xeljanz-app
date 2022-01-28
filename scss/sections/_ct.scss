@@ -1,4 +1,33 @@
 #ct {
+    .ct-header {
+        color: $ct-color;
+        font-family: 'Roboto';
+        font-weight: 500;
+        letter-spacing: .25rem;
+        align-self: center;
+    }
+    .endpoints {
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+        .endpoint-header {
+            color: #fff;
+            background-color: #41AEF2;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            margin-top: 15px;
+
+            &.lighter {
+                background-color: rgba(65, 174, 242,.6);
+            }
+        }
+        ul {
+            padding: 15px;
+        }
+    }
     p {
         color: $gray-color;
         font-weight: 300;
