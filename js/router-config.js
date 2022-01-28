@@ -77,9 +77,22 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/clinical-trials/jia-categories',
             templateUrl: 'content/ct/study-design/jia-categories.html'
         })
+        .state('BASELINE-DISEASE-CHARACTERISTICS', {
+            url: '/clinical-trials/baseline-disease-characteristics',
+            templateUrl: 'content/ct/patient-demographics/disease-characteristics.html'
+        })
+        .state('TRIAL-DESIGN', {
+            url: '/clinical-trials/trial-design',
+            templateUrl: 'content/ct/pk-analysis/trial-design.html'
+        })
+        .state('PLASMA-CONCENTRATIONS', {
+            url: '/clinical-trials/plasma-concentrations',
+            templateUrl: 'content/ct/pk-analysis/plasma-concentrations.html'
+        })
 });
 
 app.controller("ctCtrl", function ($scope, $state, $stateParams) {
+    // console.log($stateParams.slideIndex);
     initSwiper($stateParams.slideIndex);
 });
 
