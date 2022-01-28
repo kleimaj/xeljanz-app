@@ -6,15 +6,15 @@
         letter-spacing: .25rem;
         align-self: center;
     }
-    .endpoints {
-        .content-container {
-            display: flex;
-            flex-direction: column;
-            width: 60%;
-            @include respond(tab-port) {
-                width: 90%;
-            }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        @include respond(tab-port) {
+            width: 90%;
         }
+    }
+    .endpoints {
         .endpoint-header {
             color: #fff;
             background-color: #41AEF2;
@@ -29,6 +29,33 @@
         }
         ul {
             padding: 15px;
+        }
+    }
+    .secondary-endpoints {
+        hr {
+            border: none;
+            border-bottom: 4px solid $ct-color;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        ul {
+            li {
+                margin-top: 15px;
+            }
+            ul {
+                padding: 0 15px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 240px;
+                li {
+                    margin-top: 0;
+                }
+                @include respond(tab-port) {
+                    height: auto;
+                    margin-left: 24px;
+                }
+            }
         }
     }
     p {
