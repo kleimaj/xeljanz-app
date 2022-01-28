@@ -44,3 +44,19 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
       } //1800px +
     }
   }
+// https://stackoverflow.com/questions/8720931/can-css-detect-the-number-of-children-an-element-has
+// https://codepen.io/anon/pen/pJeLdE?editors=110
+@mixin with-count($n) {
+    @if $n == 1 {
+      &:first-child:nth-last-child(1) {
+        @content;
+      }
+    }
+    @else {
+      &:first-child:nth-last-child(#{$n}),
+      &:first-child:nth-last-child(#{$n}) ~ & {
+        @content;
+      }
+    }
+  }
+  
