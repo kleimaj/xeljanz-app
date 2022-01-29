@@ -38,6 +38,9 @@
         @include respond(phone) {
             margin: 8px;
         }
+        &.ct {
+            color: $ct-color;
+        }
     }
     
     .btn-container {
@@ -79,6 +82,9 @@
         @include respond(phone) {
             padding: 4px 12px;
             font-size: 1.8rem;
+        }
+        &.ct {
+            background-color: $ct-color;
         }
     }
 }

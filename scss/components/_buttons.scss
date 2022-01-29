@@ -177,4 +177,12 @@
         background-color: #033258;
         color: #fff;
     }
+    &.ct {
+        border: 2px solid $ct-color;
+        color: $ct-color;
+        &.active {
+            background-color: $ct-color;
+            color: #fff;
+        }
+    }
 }
