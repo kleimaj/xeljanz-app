@@ -31,6 +31,8 @@
             width: 100%;
             text-align: center;
             padding: 5px;
+            margin: 0;
+            font-weight: normal;
             margin-top: 15px;
 
             &.lighter {
@@ -42,6 +44,10 @@
         }
     }
     .secondary-endpoints {
+        .ct-header {
+            padding: 0;
+            padding-top: 10px;
+        }
         hr {
             border: none;
             border-bottom: 4px solid $ct-color;
@@ -71,7 +77,7 @@
     .phase-pk-analysis {
         h5 {
             // text-align: center;
-            margin-top: 15px;
+            margin: 15px;
             align-self: center;
         }
     }
@@ -185,6 +191,11 @@
                 counter-reset: list;
             }
         }
+    }
+    h4 {
+        color: $gray-color;
+        font-weight: 300;
+        margin: 15px;
     }
     .content {
         overflow-y: scroll;
