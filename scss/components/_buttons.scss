@@ -107,6 +107,8 @@
     color: $ct-color;
     display: flex;
     align-items: center;
+    background: white;
+    border-radius: 50%;
     .ct-header {
         padding-left: 15px;
     }
@@ -114,6 +116,11 @@
         .ct-header {
             display: none;
         }
+    }
+    @include respond(phone) {
+        font-size: 2rem;
+        right: 90%;
+        margin-top: 5px;
     }
 }
 .review-btn {
