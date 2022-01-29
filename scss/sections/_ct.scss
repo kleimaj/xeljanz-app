@@ -77,6 +77,13 @@
             }
         }
     }
+    .patient-disposition {
+        .ct-header {
+            @include respond(phone) {
+                padding: 15px;
+            }
+        }
+    }
     .img-wrapper {
         @include respond(phone) {
             width: 90%;
