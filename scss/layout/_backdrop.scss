@@ -6,6 +6,7 @@
         align-items: center;
         justify-content: center;
         z-index: -1;
+        overflow: hidden;
         background: rgb(255,255,255);
         background: -moz-linear-gradient(180deg, rgba(255,255,255,0.6881127450980392) 50%, rgba(65,174,242,0.33237044817927175) 100%);
         background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.6881127450980392) 50%, rgba(65,174,242,0.33237044817927175) 100%);
