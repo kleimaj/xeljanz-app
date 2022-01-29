@@ -88,29 +88,52 @@
         @include respond(tab-port) {
             padding: 0;
         }
-        .table {
-            margin: 10px;
-            @include respond(tab-port) {
-                margin: 5px;
-            }
+    }
+    .table {
+        &.gray {
             h5 {
-                background: #2EB4FF;
-                font-weight: bold;
-                color: $gray-color;
-                padding: 10px;
+                background: #999999;
             }
             ul {
-                background: rgba(46, 180, 255, 0.2);
-                padding: 10px;
+                background: #DDD;
+            }
+        }
+        margin: 10px;
+        @include respond(tab-port) {
+            margin: 5px;
+            h5,p {
+                font-size: 1.5rem;
+            }
+            ul li {
+                font-size: 1.4rem;
+            }
+            ul {
+                padding: 5px !important;
+            }
+        }
+        h5 {
+            background: #2EB4FF;
+            font-weight: bold;
+            color: $gray-color;
+            padding: 10px;
+        }
+        .subheader {
+            background: rgba(46, 180, 255, 0.2);
+            font-weight: bold;
+            margin: 0;
+            padding: 10px;
+        }
+        ul {
+            background: rgba(46, 180, 255, 0.2);
+            padding: 10px;
+            li {
+                color: $gray-color;
+            }
+            ul {
+                background: none;
+                padding: 0px;
                 li {
                     color: $gray-color;
-                }
-                ul {
-                    background: none;
-                    padding: 0px;
-                    li {
-                        color: $gray-color;
-                    }
                 }
             }
         }
