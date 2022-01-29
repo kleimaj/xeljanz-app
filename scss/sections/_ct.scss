@@ -69,6 +69,14 @@
             align-self: center;
         }
     }
+    .trial-design {
+        .tables {
+            @include respond(tab-port) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
     .img-wrapper {
         @include respond(phone) {
             width: 90%;
@@ -85,9 +93,6 @@
     .tables {
         display: flex;
         padding: 15px;
-        @include respond(tab-port) {
-            padding: 0;
-        }
     }
     .table {
         &.gray {
