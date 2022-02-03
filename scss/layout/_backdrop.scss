@@ -1,4 +1,4 @@
-.backdrop-ct {
+.backdrop {
         height: 90vh;
         width: 100vw;
         position: absolute;
@@ -17,7 +17,21 @@
             // left: 40%;
             // top: 35%;
             font-size: 30rem;
-            color: $ct-color;
             opacity: 10%;
+        }
+        &.ct {
+            i {
+                color: $ct-color;
+            }
+        }
+        &.efficacy {
+            // 242, 160, 7
+            background: -moz-linear-gradient(180deg, rgba(255,255,255,0.6881127450980392) 50%, rgba(242, 160, 7,0.33237044817927175) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.6881127450980392) 50%, rgba(242, 160, 7,0.33237044817927175) 100%);
+            background: linear-gradient(180deg, rgba(255,255,255,0.6881127450980392) 50%, rgba(242, 160, 7,0.33237044817927175) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#41aef2",GradientType=1);
+            i {
+                color: $efficacy-color;
+            }
         }
 }

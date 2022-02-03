@@ -118,6 +118,7 @@ nav.mobile {
             border-top: 8px solid $efficacy-color;
             &.active {
                 background-color: $efficacy-color;
+                color: #fff;
             }
         }
         &.safety {
