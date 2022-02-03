@@ -41,6 +41,9 @@
         &.ct {
             color: $ct-color;
         }
+        &.efficacy {
+            color: $efficacy-color;
+        }
     }
     
     .btn-container {
@@ -85,6 +88,9 @@
         }
         &.ct {
             background-color: $ct-color;
+        }
+        &.efficacy {
+            background: $efficacy-color;
         }
     }
 }

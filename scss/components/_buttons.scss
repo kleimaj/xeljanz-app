@@ -144,6 +144,10 @@
         color: #fff;
         background: $ct-color;
     }
+    &.efficacy {
+        color: #fff;
+        background: $efficacy-color;
+    }
     border: none;
     border-radius: 40px;
     padding: 4px 12px;
@@ -182,6 +186,14 @@
         color: $ct-color;
         &.active {
             background-color: $ct-color;
+            color: #fff;
+        }
+    }
+    &.efficacy {
+        border: 2px solid $efficacy-color;
+        color: $efficacy-color;
+        &.active {
+            background-color: $efficacy-color;
             color: #fff;
         }
     }

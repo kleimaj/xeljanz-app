@@ -71,6 +71,9 @@
         &.ct {
             color: $ct-color;
         }
+        &.efficacy {
+            color: $efficacy-color;
+        }
 
         &:after {
             font-size: 2rem;
@@ -105,6 +108,15 @@
         .swiper-pagination-bullet-active
         {
             background: $ct-color;
+        }
+      }
+      .efficacy {
+        .swiper-pagination-bullet {
+            background: rgb(242, 160, 7, 0.2);
+        }
+        .swiper-pagination-bullet-active
+        {
+            background: $efficacy-color;
         }
       }
 
