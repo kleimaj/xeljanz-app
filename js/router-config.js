@@ -24,7 +24,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         .state ('STUDY-DESIGN', {
             url: '/clinical-trials/main',
             templateUrl: 'content/ct/main.html',
-            controller: 'ctCtrl',
+            controller: 'slideCtrl',
             params: {
                 slideIndex: 0
             }
@@ -32,7 +32,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         .state ('ENDPOINTS', {
             url: '/clinical-trials/main',
             templateUrl: 'content/ct/main.html',
-            controller: 'ctCtrl',
+            controller: 'slideCtrl',
             params: {
                 slideIndex: 1
             }
@@ -40,7 +40,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         .state ('SECONDARY-SAFETY-ENDPOINTS', {
             url: '/clinical-trials/main',
             templateUrl: 'content/ct/main.html',
-            controller: 'ctCtrl',
+            controller: 'slideCtrl',
             params: {
                 slideIndex: 2
             }
@@ -48,7 +48,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         .state ('PATIENT-DEMOGRAPHICS', {
             url: '/clinical-trials/main',
             templateUrl: 'content/ct/main.html',
-            controller: 'ctCtrl',
+            controller: 'slideCtrl',
             params: {
                 slideIndex: 3
             }
@@ -56,7 +56,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         .state ('PHASE-PK-ANALYSIS', {
             url: '/clinical-trials/main',
             templateUrl: 'content/ct/main.html',
-            controller: 'ctCtrl',
+            controller: 'slideCtrl',
             params: {
                 slideIndex: 4
             }
@@ -89,9 +89,29 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/clinical-trials/plasma-concentrations',
             templateUrl: 'content/ct/pk-analysis/plasma-concentrations.html'
         })
+        .state('EFFICACY', {
+            url: '/efficacy',
+            templateUrl: 'content/efficacy/efficacy-landing.html'
+        })
+        .state('PRIMARY-ENDPOINTS', {
+            url: '/efficacy/main',
+            templateUrl: 'content/efficacy/main.html',
+            controller: 'slideCtrl',
+            params: {
+                slideIndex: 0
+            }
+        })
+        .state('SECONDARY-ENDPOINTS', {
+            url: '/efficacy/main',
+            templateUrl: 'content/efficacy/main.html',
+            controller: 'slideCtrl',
+            params: {
+                slideIndex: 2
+            }
+        })
 });
 
-app.controller("ctCtrl", function ($scope, $state, $stateParams) {
+app.controller("slideCtrl", function ($scope, $state, $stateParams) {
     // console.log($stateParams.slideIndex);
     initSwiper($stateParams.slideIndex);
 });
