@@ -46,6 +46,14 @@ var closeModal = () => {
   document
     .querySelectorAll('.modal-btn')
     .forEach((btn) => btn.classList.remove('active'));
+  if (currentQuestion == 3) {
+    document.querySelector('.modal-btn').remove();
+    document.querySelector('.modal-btn').remove();
+    document.querySelectorAll('.modal-btn')[0].innerText = 'TRUE'
+    document.querySelectorAll('.modal-btn')[1].innerText = 'FALSE';
+    document.querySelector('.modal h4').innerText = 'A SIGNIFICANTLY LOWER PROPORTION OF PATIENTS TREATED WITH TOFACITINIB EXPERIENCED A DISEASE FLARE AT WEEK 44 IN THE DB PHASE COMPARED TO THE PLACEBO GROUP'
+    currentQuestion = 0;
+  }
   document.querySelector('.submit').innerHTML = defaultSubmit;
   document.querySelector('.submit').removeEventListener('click', closeModal);
   document.querySelector('.submit').addEventListener('click', checkAnswer);
