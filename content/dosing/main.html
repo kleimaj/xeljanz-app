@@ -49,7 +49,7 @@
     </div>
     <div class="content swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide primary-endpoint-1">
+            <div class="swiper-slide dosing-slide">
                 <div class="content-container">
                     <div class="slide-btns">
                         <a href="" ui-sref="DOSE-ADJUSTMENTS" class="slide-btn">DOSE ADJUSTMENTS</a>
@@ -72,64 +72,34 @@
                     </p>
                 </div>
             </div>
-            <div class="swiper-slide primary-endpoint-2">
-                <a href="" class="audio"><i class="fas fa-volume-up"></i></a>
+            <div class="swiper-slide pregnancy">
                 <div class="content-container">
-                <h3 class="efficacy-header">PRIMARY ENDPOINT<br> OCCURENCE OF DISEASE FLARE (LOCF<sup>A</sup>) IN DB PHASE (PCJIA/SPJA/ERA)</h3>
+                <h3 class="dosing-header">ORAL SOLUTION</h3>
+                <ul class="check">
+                    <li>Store at 20°C to 25°C (68°F to 77°F) in original bottle and carton to protect from light.</li>
+                    <li>Excursions permitted between 15°C and 30°C (59°F and 86°F)</li>
+                    <li>Use contents of bottle within 60 days of opening and
+                        discard remaining oral solution after 60 days</li>
+                    <li><strong>Active ingredient:</strong> tofacitinib citrate</li>
+                    <li>Inactive ingredients: grape flavor (natural), hydrochloric acid, lactic acid, purified water, sodium benzoate, sucralose, and xylitol</li>
+                </ul>
                 <div class="img-wrapper">
-                <img src="assets/efficacy/primary-endpoint-2.png" class="efficacy-2" alt="Primary Endpoint graph" />
+                <img src="assets/dosing/dosing-2.png" class="dosing-2" alt="oral solution diagram" />
                 </div>
                 </div>
                 <div class="footnotes">
-                    <ol>
-                        <li>LOCF=last observation carried forward was used for inputing intermittent missing compo-nents and assessments;</li>
-                        <li>5 mg BID or equivalent weight based lower dose in patients &lt;40 kg BID, twice daily;</li>
-                    </ol>
-                    <p>SE, standard error; DB=double blind<br>
-                        XELJANZ/XELJANZ XR/XELJANZ Oral Solution [prescribing information]. New York, NY:<br>
-                        Pfizer Inc; 2020.
+                    <p>XELJANZ/XELJANZ XR/XELJANZ Oral Solution [prescribing information]. New York, NY: Pfizer Inc; 2020.
                     </p>
-                </div>
-            </div>
-            <div class="swiper-slide secondary-endpoint-1">
-                <a href="" class="audio"><i class="fas fa-volume-up"></i></a>
-                <div class="content-container">
-                <h3 class="efficacy-header">SECONDARY ENDPOINT TIME TO DISEASE FLARE<sup>A</sup> IN DB PHASE (PCJIA/JPSA/ERA)</h3>
-                <div class="img-wrapper">
-                <img src="assets/efficacy/secondary-endpoint-1.png" class="efficacy-3" alt="Secondary Endpoint graph" />
-                </div>
-                <h3 class="efficacy-header">TREATMENT</h3>
-                <div class="img-wrapper">
-                    <img src="assets/efficacy/secondary-endpoint-2.png" class="efficacy-4" alt="Secondary Endpoint table">
-                </div>
-                </div>
-                <div class="footnotes">
-                    <ol>
-                        <li>Flare is defined as a worsening of &geq;30% in &geq;3 of the 6 variables of the JIA core set, with &leq;1 variable improving by &geq;30% ( Brunner HI et al. J Rheumatol 2002; 29: 1058 1064);</li>
-                        <li>5 mg BID or equivalent weight based lower dose in patients &lt;40 kg.</li>
-                    </ol>
-                    <p>DB=double blind; CI=confidence interval; HR=hazard ratio;<br>
-                        Data on file. Pfizer Inc., New York, NY
-                    </p>
-                </div>
-            </div>
-            <div class="swiper-slide secondary-endpoint-2">
-                <a href="" class="audio"><i class="fas fa-volume-up"></i></a>
-                <div class="content-container">
-                <h3 class="efficacy-header">SECONDARY ENDPOINT<br>JIA ACR RESPONSE RATES (OBSERVED DATA) IN DB PHASE OVER TIME (PCJIA) IN TOFACITINIB-TREATED PATIENTS</h3>
-                <div class="img-wrapper">
-                    <img src="assets/efficacy/secondary-endpoint-3.png" class="secondary-endpoint-4" alt="Secondary Endpoint graph" />
-                </div>
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next efficacy">
+        <div class="swiper-button-next dosing">
             NEXT
         </div>
-        <div class="swiper-button-prev efficacy">PREVIOUS</div>
-        <div class="swiper-pagination efficacy"></div>
+        <div class="swiper-button-prev dosing">PREVIOUS</div>
+        <div class="swiper-pagination dosing"></div>
         </div>
-        <button class="review-btn efficacy vis-hidden">
+        <button class="review-btn dosing vis-hidden">
             <i class="fas fa-question"></i>
             <h5>REVIEW</h5>
         </button>
@@ -144,7 +114,7 @@
             <i class="fas fa-users"></i>
             <h5>Clinical Trials</h5>
         </a>
-        <a href="" ui-sref="EFFICACY" class="efficacy active">
+        <a href="" ui-sref="EFFICACY" class="efficacy">
             <i class="fas fa-chart-line"></i>
             <h5>Efficacy</h5>
         </a>
@@ -152,7 +122,7 @@
             <i class="fas fa-exclamation-triangle"></i>
             <h5>Safety</h5>
         </a>
-        <a href="" ui-sref="DOSING" class="dosing">
+        <a href="" ui-sref="DOSING" class="dosing active">
             <i class="fas fa-prescription"></i>
             <h5>Dosing</h5>
         </a>
