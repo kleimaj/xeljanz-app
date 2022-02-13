@@ -133,6 +133,7 @@ nav.mobile {
             border-top: 8px solid $dosing-color;
             &.active {
                 background-color: $dosing-color;
+                color: #fff;
             }
         }
     }

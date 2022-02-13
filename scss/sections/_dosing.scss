@@ -42,6 +42,45 @@
             }
         }
     }
+    .table-header {
+        background: #F48771;
+        width: 100%;
+        margin: 0;
+        padding: 12px;
+        color: #fff;
+        text-align: center;
+        @include respond(phone) {
+            margin-left: 24px;
+            text-align: left;
+        }
+    }
+    .adjustments-table {
+        display: flex;
+        ul {
+            li {
+                font-size: 1.8rem;
+            }
+        }
+        p {
+            font-size: 1.8rem;
+            &.bold {
+                font-weight: bold;
+            }
+        }
+        .row1 {
+            background: #F48771;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+        }
+        .row2 {
+            .bold {
+                text-align: center;
+            }
+            height: 200px;
+        }
+
+    }
     p {
         color: $gray-color;
         font-weight: 300;

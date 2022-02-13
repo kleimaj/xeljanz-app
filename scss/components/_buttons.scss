@@ -113,7 +113,13 @@
     align-items: center;
     background: white;
     border-radius: 50%;
+    &.dosing {
+        color: $dosing-color;
+    }
     .ct-header {
+        padding-left: 15px;
+    }
+    .dosing-header {
         padding-left: 15px;
     }
     @include respond(tab-land) {
