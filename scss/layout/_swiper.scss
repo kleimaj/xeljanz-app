@@ -74,6 +74,9 @@
         &.efficacy {
             color: $efficacy-color;
         }
+        &.dosing {
+            color: $dosing-color;
+        }
 
         &:after {
             font-size: 2rem;
@@ -117,6 +120,16 @@
         .swiper-pagination-bullet-active
         {
             background: $efficacy-color;
+        }
+      }
+      .dosing {
+        //   242, 84, 48
+        .swiper-pagination-bullet {
+            background: rgb(242, 84, 48, 0.2);
+        }
+        .swiper-pagination-bullet-active
+        {
+            background: $dosing-color;
         }
       }
 

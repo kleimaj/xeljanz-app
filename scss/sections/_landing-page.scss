@@ -67,4 +67,26 @@
             margin-bottom: 15px;
         }
     }
+    &.dosing {
+        h1 {
+            margin-bottom: 0;
+        }
+        h3 {
+            margin-bottom: 30px;
+        }
+        .dosing-header {
+            color: $dosing-color;
+            font-family: 'Roboto';
+            font-weight: 500;
+            letter-spacing: .25rem;
+            align-self: center;
+            text-align: center;
+            font-size: 2.1rem;
+            @include respond(phone) {
+                padding: 15px;
+                padding-top: 0;
+                width: 100%;
+            }
+        }
+    }
 }

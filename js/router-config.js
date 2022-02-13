@@ -109,6 +109,26 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                 slideIndex: 2
             }
         })
+        .state('DOSING', {
+            url: '/dosing',
+            templateUrl: 'content/dosing/landing.html'
+        })
+        .state('DOSING-ADMINISTRATION', {
+            url: '/dosing/main',
+            templateUrl: 'content/dosing/main.html',
+            controller: 'slideCtrl',
+            params: {
+                slideIndex: 0
+            }
+        })
+        .state('ORAL-SOLUTION', {
+            url: '/dosing/main',
+            templateUrl: 'content/dosing/main.html',
+            controller: 'slideCtrl',
+            params: {
+                slideIndex: 1
+            }
+        })
 });
 
 app.controller("slideCtrl", function ($scope, $state, $stateParams) {
