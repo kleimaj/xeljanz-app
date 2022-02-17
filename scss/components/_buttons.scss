@@ -113,6 +113,7 @@
     align-items: center;
     background: white;
     border-radius: 50%;
+    z-index: 2;
     &.dosing {
         color: $dosing-color;
     }
@@ -124,6 +125,9 @@
     }
     @include respond(tab-land) {
         .ct-header {
+            display: none;
+        }
+        .dosing-header {
             display: none;
         }
     }

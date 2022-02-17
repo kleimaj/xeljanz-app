@@ -54,6 +54,38 @@
             text-align: left;
         }
     }
+    .pregnancy {
+        .dosing-header {
+            font-size: 1.6rem;
+            margin-left: 15px;
+        }
+        .check {
+            li {
+                padding: 15px 30px;
+                line-height: 1.2;
+            }
+        }
+        h4 {
+            font-weight: normal;
+            align-self: baseline;
+            &.red {
+                align-self: center;
+                color: red;
+            }
+        }
+    }
+    .bottom-p {
+        line-height: 1.75em;
+        color: $gray-color;
+        opacity: .7;
+    }
+    .cyp-btn {
+        background: #F2542F;
+        color: white;
+        padding: 18px;
+        border-radius: 40px;
+        font-size: 2.1rem;
+    }
     .adjustments-table {
         display: flex;
         ul {

@@ -129,14 +129,14 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                 slideIndex: 1
             }
         })
-        // .state('DOSE-ADJUSTMENTS', {
-        //     url: '/dosing/dose-adjustments',
-        //     templateUrl: 'content/dosing/dosing/dose-adjustments.html'
-        // })
-        // .state('PREGNANCY', {
-        //     url: '/dosing/pregnancy',
-        //     templateUrl: 'content/dosing/dosing/pregnancy.html'
-        // })
+        .state('DOSE-ADJUSTMENTS', {
+            url: '/dosing/dose-adjustments',
+            templateUrl: 'content/dosing/dosing/dose-adjustments.html'
+        })
+        .state('PREGNANCY', {
+            url: '/dosing/pregnancy',
+            templateUrl: 'content/dosing/dosing/pregnancy.html'
+        })
 });
 
 app.controller("slideCtrl", function ($scope, $state, $stateParams) {
