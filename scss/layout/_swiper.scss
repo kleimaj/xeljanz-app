@@ -74,6 +74,9 @@
         &.efficacy {
             color: $efficacy-color;
         }
+        &.safety {
+            color: $safety-color;
+        }
         &.dosing {
             color: $dosing-color;
         }
@@ -120,6 +123,15 @@
         .swiper-pagination-bullet-active
         {
             background: $efficacy-color;
+        }
+      }
+      .safety {
+        .swiper-pagination-bullet {
+          background: rgb(242, 160, 7, 0.2);
+        }
+        .swiper-pagination-bullet-active
+        {
+            background: $safety-color;
         }
       }
       .dosing {

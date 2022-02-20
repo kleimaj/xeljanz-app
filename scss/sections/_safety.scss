@@ -1,0 +1,90 @@
+#safety {
+    .safety-header {
+        color: $safety-color;
+        font-family: 'Roboto';
+        font-weight: 500;
+        // letter-spacing: .25rem;
+        align-self: center;
+        text-align: center;
+        font-size: 2.1rem;
+        @include respond(phone) {
+            padding: 15px;
+            padding-top: 0;
+            width: 100%;
+        }
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        .img-wrapper {
+            margin: 0 auto;
+        }
+        @include respond(tab-port) {
+            width: 90%;
+        }
+    }
+    .img-wrapper {
+        @include respond(phone) {
+            width: 90%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    p {
+        color: $gray-color;
+        font-weight: 300;
+        margin: 18px;
+    }
+    .footnotes {
+        align-self: flex-start;
+        padding: 20px;
+        font-size: 1.1rem;
+
+        p {
+            display: block;
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #000;
+            font-weight: 300;
+        }
+
+        ol {
+            display: -webkit-box;
+            flex-wrap: wrap;
+            font-weight: 300;
+            margin: 10px 0;
+            @include respond(tab-port) {
+                display: block;
+            }
+            li {
+                counter-increment: list;
+                color: #000;
+                font-weight: 300;
+            }
+            li:before {
+                content: counter(list, lower-alpha) " ";
+                position: relative;
+                bottom: 5px;
+                font-size: .8rem;
+            }
+            &:first-child {
+                counter-reset: list;
+            }
+        }
+    }
+    h4 {
+        color: $gray-color;
+        font-weight: 300;
+        margin: 15px;
+    }
+    .content {
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        max-height: 50vh;
+        justify-content: flex-start;
+        max-height: 65vh;
+    }
+}

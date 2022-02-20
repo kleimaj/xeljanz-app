@@ -50,7 +50,7 @@
                 <div class="content-container">
 
                 <div class="slide-btns">
-                    <a href="" ui-sref="SPECIAL-INTEREST" class="slide-btn">AEs OF SPECIAL INTEREST</a>
+                    <a href="" ui-sref="SPECIAL-INTEREST" class="slide-btn safety">AEs OF SPECIAL INTEREST</a>
                 </div>
                 <div class="img-wrapper">
                 <img src="assets/safety/safety-1.png" class="safety-1" alt="Patients with events" />
@@ -90,12 +90,16 @@
                 <h3 class="safety-header">INFECTIONS (&gt;2% OCCURENCE) DURING DB PHASE (WK 18-44)</h3>
                 <div class="content-container">
                 <div class="toggle-group">
-                    <p class="active">TOFACITINIB</p>
-                    <button class="toggle-btn"></button>
-                    <p>PLACEBO</p>
+                    <h5 class="active">TOFACITINIB</h5>
+                    <!-- Rounded switch -->
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="toggle round"></span>
+                    </label>
+                    <h5>PLACEBO</h5>
                 </div>
                 <div class="img-wrapper">
-                    <img src="assets/safety/tofacitinib.png" alt="tofacitinib" />
+                    <img src="assets/safety/tofacitinib.png" alt="tofacitinib" class="toggle-img"/>
                 </div>
                 </div>
                 <div class="footnotes">
@@ -144,8 +148,8 @@
         <div class="swiper-button-next safety">
             NEXT
         </div>
-        <div class="swiper-button-prev ct">PREVIOUS</div>
-        <div class="swiper-pagination ct"></div>
+        <div class="swiper-button-prev safety">PREVIOUS</div>
+        <div class="swiper-pagination safety"></div>
         </div>
         <button class="review-btn safety vis-hidden">
             <i class="fas fa-question"></i>
@@ -176,5 +180,6 @@
         </a>
     </nav>
 </section>
-<script src="js/ct/swiper-config.js" defer></script>
-<script src="js/ct/modal.js" defer></script>
+<script src="js/safety/swiper-config.js" defer></script>
+<script src="js/safety/modal.js" defer></script>
+<script src="js/safety/toggle.js" defer></script>
