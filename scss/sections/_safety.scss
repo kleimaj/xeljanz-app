@@ -24,6 +24,12 @@
             width: 90%;
         }
     }
+    .recommendations {
+        text-align: center;
+        color: $safety-color;
+        font-size: 1.6rem;
+        margin: 15px;
+    }
     .img-wrapper {
         @include respond(phone) {
             width: 90%;

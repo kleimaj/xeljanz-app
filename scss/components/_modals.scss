@@ -49,6 +49,9 @@
         &.dosing {
             color: $dosing-color;
         }
+        &.safety {
+            color: $safety-color;
+        }
     }
     
     .btn-container {
@@ -96,6 +99,9 @@
         }
         &.efficacy {
             background: $efficacy-color;
+        }
+        &.safety {
+            background: $safety-color;
         }
         &.dosing {
             background: $dosing-color;

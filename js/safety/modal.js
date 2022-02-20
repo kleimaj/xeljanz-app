@@ -36,7 +36,7 @@ var checkAnswer = () => {
   if (
     document.querySelector('.modal-btn.active') &&
     document.querySelector('.modal-btn.active').innerText ==
-      'TRUE'
+      'UPPER RESPIRATORY INFECTION, HEADACHE AND NASOPHARYNGITIS'
   ) {
     document.querySelector('.result').innerHTML = correctResult;
     document.querySelector('.result').classList.remove('incorrect');

@@ -125,6 +125,7 @@ nav.mobile {
             color: $safety-color;
             border-top: 8px solid $safety-color;
             &.active {
+                color: #fff;
                 background-color: $safety-color;
             }
         }
