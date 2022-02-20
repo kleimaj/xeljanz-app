@@ -67,6 +67,24 @@
             margin-bottom: 15px;
         }
     }
+    &.safety {
+        h1 {
+            margin-bottom: 0;
+        }
+        h3 {
+            margin-bottom: 30px;
+        }
+        .safety-header {
+            color: $safety-color;
+            font-family: 'Roboto';
+            font-weight: normal;
+            letter-spacing: .25rem;
+            align-self: center;
+            text-align: center;
+            font-size: 2.1rem;
+            margin-bottom: 15px;
+        }
+    }
     &.dosing {
         h1 {
             margin-bottom: 0;

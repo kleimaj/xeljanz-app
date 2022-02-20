@@ -34,6 +34,15 @@
                 color: $efficacy-color;
             }
         }
+        &.safety { //191, 107, 4
+            background: -moz-linear-gradient(180deg, rgba(255,255,255,0.6881127450980392) 50%, rgba(191, 107, 4,0.33237044817927175) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.6881127450980392) 50%, rgba(191, 107, 4,0.33237044817927175) 100%);
+            background: linear-gradient(180deg, rgba(255,255,255,0.6881127450980392) 50%, rgba(191, 107, 4,0.33237044817927175) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#41aef2",GradientType=1);
+            i {
+                color: rgb(191, 107, 4);
+            }
+        }
         &.dosing {
             // 242, 84, 48
             background: -moz-linear-gradient(180deg, rgba(255,255,255,0.6881127450980392) 50%, rgba(242, 84, 48,0.33237044817927175) 100%);
