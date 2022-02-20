@@ -137,6 +137,42 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/dosing/pregnancy',
             templateUrl: 'content/dosing/dosing/pregnancy.html'
         })
+        .state('SAFETY', {
+            url: '/safety',
+            templateUrl: 'content/safety/landing.html'
+        })
+        .state('ADVERSE-EVENTS', {
+            url: '/safety/main',
+            templateUrl: 'content/safety/main.html',
+            controller: 'slideCtrl',
+            params: {
+                slideIndex: 0
+            }
+        })
+        .state('COMMON-AES', {
+            url: '/safety/main',
+            templateUrl: 'content/safety/main.html',
+            controller: 'slideCtrl',
+            params: {
+                slideIndex: 1
+            }
+        })
+        .state('INFECTIONS', {
+            url: '/safety/main',
+            templateUrl: 'content/safety/main.html',
+            controller: 'slideCtrl',
+            params: {
+                slideIndex: 2
+            }
+        })
+        .state('LAB-ABNORMALITIES', {
+            url: '/safety/main',
+            templateUrl: 'content/safety/main.html',
+            controller: 'slideCtrl',
+            params: {
+                slideIndex: 3
+            }
+        })
 });
 
 app.controller("slideCtrl", function ($scope, $state, $stateParams) {
