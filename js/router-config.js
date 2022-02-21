@@ -173,6 +173,10 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
                 slideIndex: 3
             }
         })
+        .state('SPECIAL-INTEREST', {
+            url: '/safety/special-interest',
+            templateUrl: 'content/safety/adverse-events/special-interest.html'
+        })
 });
 
 app.controller("slideCtrl", function ($scope, $state, $stateParams) {

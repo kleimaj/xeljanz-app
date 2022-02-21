@@ -10,7 +10,7 @@
         @include respond(phone) {
             padding: 15px;
             padding-top: 0;
-            width: 100%;
+            width: auto;
         }
     }
     .content-container {
