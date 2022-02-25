@@ -10,7 +10,7 @@
         @include respond(phone) {
             padding: 15px;
             padding-top: 0;
-            width: 100%;
+            width: auto;
         }
     }
     .content-container {
@@ -58,6 +58,7 @@
         .dosing-header {
             font-size: 1.6rem;
             margin-left: 15px;
+            width: auto;
         }
         .check {
             li {
@@ -126,7 +127,6 @@
                 content: "✓";
                 color: $dosing-color;
                 text-indent: -1em;
-                // padding-right: .5em;
             }
         }
     }

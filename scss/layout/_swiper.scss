@@ -4,23 +4,23 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        padding-bottom: 40px;
         @include respond(big-desktop) {
-            // height: 670px;
-            height: 65vh;
+            height: auto;
         }
-        @include respond(tab-land) {
-            // height: 360px;
-        }
+        height: auto;
         @include respond(phone) {
             height: 52vh;
         }
-        // height: 400px;
-        height: 57vh;
         .audio {
             position: absolute;
             right: 10px;
             color: #033258;
             font-size: 2rem;
+
+            &.efficacy {
+                color: $efficacy-color;
+            }
         }
         img {
             @include respond(big-desktop) {
@@ -28,10 +28,6 @@
             }
             @include respond(tab-land) {
                 max-width: 100%;
-                // max-height: 400px;
-            }
-            @include respond(tab-port) {
-                // max-width: 400px;
                 // max-height: 400px;
             }
             @include respond(phone) {
@@ -61,9 +57,10 @@
         @include respond(tab-land) {
             display: none;
         }
+        bottom: 110px !important;
         // top: 95%;
         top: auto;
-        bottom: 110px !important;
+        // bottom: 100px !important;
         position: fixed;
         color: #033159;
         font-family: 'Roboto Condensed';

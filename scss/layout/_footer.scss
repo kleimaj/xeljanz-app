@@ -3,7 +3,7 @@ footer {
     width: 100%;
     display: flex;
     // justify-content: center;
-    position: absolute;
+    // position: absolute;
     bottom: 0;
     p {
         margin: 20px 30px;
@@ -17,5 +17,8 @@ footer {
 .footer-visible {
     @include respond(tab-land) {
         display: flex;
+        position: absolute;
+        bottom: 0;
     }
+    display: none;
 }
