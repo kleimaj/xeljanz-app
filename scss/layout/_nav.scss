@@ -73,6 +73,7 @@ nav.mobile {
     @include respond(tab-land) {
         display: flex;
         z-index: 2;
+        position: fixed;
     }
     width: 100%;
     // position: absolute;
