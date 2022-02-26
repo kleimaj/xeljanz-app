@@ -6,10 +6,10 @@ document.querySelector('input').addEventListener('click', () => {
     labels[1].classList.toggle('active');
     if (toggle) {
         toggle = false;
-        img.src = 'assets/safety/placebo.png'
+        img.src = 'assets/safety/placebo.svg'
     }
     else {
         toggle = true;
-        img.src = 'assets/safety/tofacitinib.png'
+        img.src = 'assets/safety/tofacitinib.svg'
     }
 })
