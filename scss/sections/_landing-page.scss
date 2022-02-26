@@ -6,6 +6,9 @@
         @include respond(tab-land) {
             min-height: 78vh;
         }
+        @include respond(phone) {
+            min-height: 84vh;
+        }
         min-height: 82vh;
         @include respond(big-desktop) {
             min-height: 87vh;

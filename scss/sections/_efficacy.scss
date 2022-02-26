@@ -81,7 +81,7 @@
     }
     .content {
         @include respond(tab-land) {
-            overflow-y: scroll;
+            // overflow-y: scroll;
         }
         display: flex;
         flex-direction: column;

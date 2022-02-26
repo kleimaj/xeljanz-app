@@ -198,9 +198,6 @@
         margin: 15px;
     }
     .content {
-        @include respond(tab-land) {
-            overflow-y: scroll;
-        }
         display: flex;
         flex-direction: column;
         // max-height: 50vh;
