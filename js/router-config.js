@@ -187,7 +187,7 @@ app.controller("slideCtrl", function ($scope, $state, $stateParams) {
 function initSwiper (slideIndex) {
     var swiper = new Swiper('.mySwiper', {
         initialSlide: slideIndex,
-        // autoHeight: true,
+        autoHeight: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
