@@ -56,12 +56,13 @@
     .swiper-button-next, .swiper-button-prev {
         @include respond(tab-land) {
             display: none;
+            position: fixed;
+            bottom: 110px !important;
         }
-        bottom: 110px !important;
         // top: 95%;
+        bottom: 10px;
         top: auto;
         // bottom: 100px !important;
-        position: fixed;
         color: #033159;
         font-family: 'Roboto Condensed';
         font-size: 2rem;
@@ -146,7 +147,10 @@
         background: #033159;
       }
       .swiper-pagination {
-          position: fixed;
-          bottom: 115px !important;
+          @include respond(tab-land) {
+            position: fixed;
+            bottom: 115px !important;
+          }
+          bottom: 10px !important;
       }
 }

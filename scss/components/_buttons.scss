@@ -153,10 +153,15 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin: 0 auto;
     justify-content: center;
     width: 120px;
     z-index: 2;
+    margin: 10px auto;
+    @include respond(tab-land) {
+        position: fixed;
+        margin: 0 auto;
+        margin-left: -60px;
+    }
     i {
         padding: 5px;
     }
@@ -187,9 +192,7 @@
     border-radius: 40px;
     padding: 4px 12px;
     left: 50%;
-    position: fixed;
     bottom: 75px;
-    margin-left: -60px;
 }
 .modal-btn {
     cursor: pointer;
