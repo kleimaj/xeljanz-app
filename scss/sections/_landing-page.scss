@@ -53,6 +53,9 @@
         margin-bottom: 20px;
     }
     &.ct {
+        .page-buttons {
+            align-items: flex-start;
+        }
         h1 {
             margin-bottom: 0;
         }
@@ -66,8 +69,21 @@
             letter-spacing: .15rem;
             align-self: center;
             text-align: center;
-            font-size: 2.1rem;
+            font-size: 2.5rem;
             margin-bottom: 15px;
+        }
+        .button-group {
+            padding: 15px;
+            .group-header {
+                text-align: center;
+                background: $ct-color;
+                color: #fff;
+                border-radius: 42px;
+            }
+        }
+        .footnote {
+            right: 0;
+            top: 0;
         }
     }
     &.efficacy {
