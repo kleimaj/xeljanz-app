@@ -9,9 +9,9 @@
             height: auto;
         }
         height: auto;
-        @include respond(phone) {
-            height: 52vh;
-        }
+        // @include respond(phone) {
+        //     height: 52vh;
+        // }
         .audio {
             position: absolute;
             right: 10px;
@@ -48,9 +48,9 @@
             align-self: flex-start;
             font-weight: 300;
             font-size: 1.4rem;
-            @include respond(tab-land) {
-                display: none;
-            }
+            // @include respond(tab-land) {
+            //     display: none;
+            // }
         }
     }
     .swiper-button-next, .swiper-button-prev {
