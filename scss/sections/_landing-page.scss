@@ -30,6 +30,16 @@
                 padding: 10px;
             }
         }
+        .footnote {
+            font-weight: 300;
+            padding: 15px;
+            font-size: 1.2rem;
+            position: relative;
+            right: 30%;
+            @include respond(phone) {
+                right: 0;
+            }
+        }
     }
     .page-buttons {
         display: flex;
