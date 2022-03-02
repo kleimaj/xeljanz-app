@@ -90,13 +90,9 @@
             visibility: hidden;
         }
     }
-    .swiper-button-next {
-        // right: 20px;
-        right: 20%;
-    }
     .swiper-button-prev {
         // left: 40px;
-        left: 20%;
+        // left: 20%;
         flex-direction: row-reverse;
     }
     .swiper-pagination-bullet {

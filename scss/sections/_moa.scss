@@ -2,4 +2,10 @@
     .img-wrapper {
         height: 80%;
     }
+    .footnotes {
+        align-self: flex-start;
+        p {
+            line-height: 3rem;
+        }
+    }
 }

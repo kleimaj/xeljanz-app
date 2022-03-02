@@ -37,7 +37,8 @@
             position: relative;
             right: 30%;
             @include respond(phone) {
-                right: 0;
+                right: 6%;
+                top: 30px;
             }
         }
     }
