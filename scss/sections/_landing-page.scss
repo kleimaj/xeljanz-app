@@ -93,7 +93,8 @@
         }
         .footnote {
             right: 0;
-            top: 0;
+            top: auto;
+            bottom: 80px;
         }
     }
     &.efficacy {
