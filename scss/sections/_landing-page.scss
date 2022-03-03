@@ -34,11 +34,16 @@
             font-weight: 300;
             padding: 15px;
             font-size: 1.2rem;
-            position: relative;
-            right: 30%;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            right: auto;
             @include respond(phone) {
-                right: 6%;
-                top: 30px;
+                // position: absolute;
+                bottom: 100px;
+                right: auto;
+                left: auto;
+                top: auto;
             }
         }
     }
@@ -168,9 +173,22 @@
                 font-size: 1.8rem;
             }
             @include respond(phone) {
-                padding: 15px;
+                // padding: 15px;
                 padding-top: 0;
                 width: 100%;
+            }
+        }
+        .footnote {
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            right: auto;
+            @include respond(phone) {
+                // position: absolute;
+                bottom: 70px;
+                right: auto;
+                left: auto;
+                top: auto;
             }
         }
     }
