@@ -21,11 +21,11 @@
             &.efficacy {
                 color: $efficacy-color;
             }
+            &.safety {
+                color: $safety-color;
+            }
         }
         img {
-            @include respond(big-desktop) {
-                margin-top: 50px;
-            }
             @include respond(tab-land) {
                 max-width: 100%;
                 // max-height: 400px;

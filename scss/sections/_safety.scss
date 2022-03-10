@@ -19,6 +19,7 @@
         width: 60%;
         .img-wrapper {
             margin: 0 auto;
+            margin-top: 15px;
         }
         @include respond(tab-port) {
             width: 90%;
@@ -31,9 +32,11 @@
         margin: 15px;
     }
     .img-wrapper {
+        margin-top: 30px;
         @include respond(phone) {
             width: 90%;
             img {
+                margin: 0;
                 width: 100%;
             }
         }
