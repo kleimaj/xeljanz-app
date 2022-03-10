@@ -47,6 +47,10 @@ sup {
     line-height: 1em;
     // padding-left: 1px;
 }
+sub {
+    vertical-align: sub;
+    font-size: 0.7em;
+  }
 .hidden {
     display: none !important;
 }

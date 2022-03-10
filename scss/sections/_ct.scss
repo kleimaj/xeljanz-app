@@ -45,12 +45,21 @@
         }
         ul {
             padding: 15px;
+            padding-left: 40px;
+            @include respond(tab-land) {
+                padding-left: 15px;
+            }
         }
     }
     .secondary-endpoints {
         .ct-header {
             padding: 0;
             padding-top: 10px;
+        }
+        .content-container {
+            h4 {
+                text-align: left;
+            }
         }
         hr {
             border: none;
@@ -84,8 +93,23 @@
             margin: 15px;
             align-self: center;
         }
+        .img-wrapper {
+            margin-top: 20px;
+            img {
+                margin: 0;
+            }
+        }
     }
     .trial-design {
+        .subtitle {
+            width: 50%;
+            text-align: center;
+            margin-bottom: 25px;
+            @include respond(tab-land) {
+                width: 90%;
+                text-align: left;
+            }
+        }
         .tables {
             @include respond(tab-port) {
                 flex-wrap: wrap;
@@ -95,6 +119,23 @@
                 width: 30%;
             }
         }
+        .desktop-vis {
+            .img-wrapper {
+                align-self: center;
+            }
+        }
+        .mobile-vis {
+            .img-wrapper {
+                width: 90%;
+                padding: 10px;
+            }
+            .tables {
+                flex-wrap: nowrap;
+            }
+            .table ul li {
+                font-size: 1rem;
+            }
+        }
     }
     .img-wrapper {
         text-align: center;
@@ -102,6 +143,21 @@
             width: 90%;
             img {
                 width: 100%;
+            }
+        }
+        &.patient-disposition {
+            margin-top: 10px;
+        }
+        &.jia-categories {
+            margin: 20px;
+        }
+        &.disease-characteristics {
+            margin: 20px;
+        }
+        &.patient-demographics {
+            margin-top: 20px;
+            img {
+                margin: 0;
             }
         }
     }
@@ -147,6 +203,8 @@
             font-weight: bold;
             margin: 0;
             padding: 10px;
+            text-align: left;
+            width: auto;
         }
         ul {
             background: rgba(46, 180, 255, 0.2);
@@ -194,6 +252,8 @@
                 position: relative;
                 bottom: 5px;
                 font-size: .8rem;
+                margin-left: 2px;
+                margin-right: -1px;
             }
             &:first-child {
                 counter-reset: list;
