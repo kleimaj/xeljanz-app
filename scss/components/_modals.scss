@@ -17,7 +17,14 @@
     flex-direction: column;
     align-items: center;
 
-    &.special-interest {
+    &.info {
+        top: 15% !important;
+        img {
+            margin-top: 15px;
+        }
+    }
+
+    &.special-interest, &.info {
         border: 2px solid $safety-color;
         justify-content: center;
         z-index: 4;
@@ -34,6 +41,41 @@
                     &::before {
                         color: $safety-color;
                     }
+                }
+            }
+        }
+        .footnotes {
+            position: relative;
+            align-self: flex-start;
+            margin: 15px 0;
+            padding: 15px;
+            font-size: 1.4rem;
+            font-weight: 300;
+            p {
+                font-size: 1.4rem;
+                margin: 10px 0;
+            }
+            ol {
+                display: -webkit-box;
+                flex-wrap: wrap;
+                font-weight: 300;
+                margin: 10px 0;
+                @include respond(tab-port) {
+                    display: block;
+                }
+                li {
+                    counter-increment: list;
+                    color: #000;
+                    font-weight: 300;
+                }
+                li:before {
+                    content: counter(list, lower-alpha) " ";
+                    position: relative;
+                    bottom: 5px;
+                    font-size: .8rem;
+                }
+                &:first-child {
+                    counter-reset: list;
                 }
             }
         }
